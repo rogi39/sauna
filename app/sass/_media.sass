@@ -1,0 +1,48 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.phone
+		a
+			font-size: 38px
+	.menu
+		.main_menu
+			li
+				a
+					font-size: 18px
+	.adnvantage_item
+		margin-bottom: $gutter
+		border-bottom: 1px solid #d2d2d2
+// ≥992px
++media-breakpoint-down(md)
+	.last_work
+		.item
+			.item_content
+				opacity: 1
+				padding: 5% 50px
+				span
+					background-color: rgba(#000, .5)
+					padding: 1px 20px
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
