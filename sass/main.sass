@@ -355,5 +355,63 @@ footer
 			color: #fff
 			box-shadow: transparent
 
+.item_work
+	background-color: $section_bgc
+	table
+		width: 100%
+		td
+			font-size: 18px
+			color: $text
+			font-weight: 500
+			padding: 5px
+			&:nth-child(2n)
+				text-align: right
+		tr
+			border-top: 2px solid #b2b2b2
+			&:hover
+				background-color: rgba($accent, .1)
+			&:first-child
+				border-top: none
+		.tr_second
+			border-top: 1px dashed #b2b2b2
+			font-style: italic
+			td:first-child
+				padding-left: 20px
+				font-weight: 300
+				color: lighten($text, 10%)
+			td:last-child
+				padding-right: 20px
+				font-weight: 300
+	.slick-dots li button:before
+		font-size: 36px
+	.slick-next
+		right: 0
+		height: 100%
+		width: 80px
+	.slick-prev
+		left: 0
+		height: 100%
+		width: 80px
+		z-index: 1
+	.slick-next:before, .slick-prev:before
+		font-family: FontAwesome
+		font-size: 48px
+
+	.slick-next:before
+		content: '\f105'
+	.slick-prev:before
+		content: '\f104'
+
+	.video
+		text-align: center
+		margin-top: 25px
+
+	h2
+		line-height: 1
+		// text-transform: uppercase
+		color: $accent
+		font-size: 28px
+		// padding: $gutter/2 0
+
 
 @import "media" // Always at the end
