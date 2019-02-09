@@ -11,5 +11,10 @@ $('.single-item').slick({
 	
 });
 
+$(".toggle_menu").click(function(){
+		$(this).toggleClass("on");
+		$(".main_menu").stop().slideToggle();
+		return false;
+	});
 
 });

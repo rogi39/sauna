@@ -22,17 +22,97 @@
 		.item
 			.item_content
 				opacity: 1
-				padding: 5% 50px
+				height: inherit
+				padding: 0
 				span
 					background-color: rgba(#000, .5)
 					padding: 1px 20px
+
+	.menu
+		.toggle_menu
+			margin-top: 14px
+		.logo
+			img
+				bottom: -95px
+		.main_menu
+			display: none
+			position: absolute
+			z-index: 10
+			width: 100%
+			top: 69px
+			left: 0
+			background: linear-gradient(to top ,darken(#F5C68A, 5%), lighten($accent, 5%))
+			li
+				display: block
+				margin-right: 0
+				border-top: 1px solid rgba(#fafafa, .3)
+				a
+					color: #fff
+
+	.phone
+		i
+			font-size: 26px
+		a
+			font-size: 30px
+			line-height: 116px
 // ≥768px
 +media-breakpoint-down(sm)
+	h1
+		text-align: right
+	.phone
+		text-align: right
+		i
+			font-size: 26px
+		a
+			font-size: 30px
+			line-height: 1.65
 
+	.menu
+		.logo
+			img
+				height: 150px
+
+	.last_work
+		h2
+			font-size: 26px
+
+	.parallax-window
+		.parallax_content
+			padding: 15px 35px
 // ≥576px
 +media-breakpoint-down(xs)
+	h1
+		font-size: 24px
+	.phone
+		i
+			font-size: 24px
+		a
+			font-size: 26px
+	.last_work
+		h2
+			padding: 5px 0
 
+	.parallax-window
+		.parallax_content
+			padding: 10px
+			margin-top: 0
+			margin-bottom: 25px
+			p
+				font-size: 18px
+			h2
+				font-size: 26px
 
+	.portfolio
+		.item_port_bg_wrap
+			padding: $gutter/3
+			padding-top: 0
+		.item_port_content
+			padding: 0 $gutter/3
+		.item_port
+			.button_port
+				margin: $gutter 0 $gutter/3 0
+				a
+					margin: 0 30px
 /*==========  Mobile First  ==========*/
 
 // ≤576px
@@ -43,6 +123,8 @@
 
 // ≤992px
 +media-breakpoint-up(lg)
-
+	.main_menu
+		display: inline-block !important
 // ≤1200px
 +media-breakpoint-up(xl)
+	
